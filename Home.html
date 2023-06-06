@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Course Website</title>
+  <link rel="stylesheet" type="text/css" href="i_dont_know.css">
+</head>
+<body>
+  <div class="header">
+    <img src="company_logo.png" alt="Company Logo">
+    <div class="other-images">
+      <img src="image1.png" alt="About">
+      <img src="image2.png" alt="Other">
+      <img src="image3.png" alt="Other">
+      <img src="image4.png" alt="Other">
+    </div>
+  </div>
+  
+  <!-- <div class="about-section">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec semper ipsum. Donec sagittis pretium neque, eget scelerisque felis ullamcorper ac.</p>
+  </div> -->
+  <!--  -->
+  <section id="services" class="services section-bg">
+    <div class="container aos-init aos-animate" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2>Why <br> Coding Blocks?</h2>
+        <p>With time tested, result oriented pedagogy &amp; industry aligned courses offering 
+          project based learning, our courses are your perfect investment into your
+          career. Get the best in the industry!</p>
+      </div>
+  
+      <div class="servicesbox">
+        <div class="icon-box">
+          <div class="icon"><img src="https://cb3img.s3.ap-south-1.amazonaws.com/img/teacher.png" alt=""></div>
+          <h4>Superb mentors</h4>
+          <p>Best in class mentors from top Tech schools and Industry favourite Techies are here to teach you.</p>
+        </div>
+  
+        <div class="icon-box">
+          <div class="icon"><img src="https://cb3img.s3.ap-south-1.amazonaws.com/img/laptop.png" alt=""></div>
+          <h4>Industry-vetted curriculum</h4>
+          <p>Best in class content, aligned to the Tech industry is delivered to you to ensure you are a darling of the Tech industry.</p>
+        </div>
+  
+        <div class="icon-box">
+          <div class="icon"><img src="https://cb3img.s3.ap-south-1.amazonaws.com/img/cd-bcm.webp" alt=""></div>
+          <h4>Project based learning</h4>
+          <p>Hands on learning pedagogy with live projects to cover practical knowledge over theoretical one.</p>
+        </div>
+  
+        <div class="icon-box">
+          <div class="icon"><img src="https://cb3img.s3.ap-south-1.amazonaws.com/img/office-bag.png" alt=""></div>
+          <h4>Superb placements</h4>
+          <p>Result oriented courses with placement across all genres, students as well as Working professionals.</p>
+        </div>
+  
+      </div>
+  
+    </div>
+  </section>
+  <!--  -->
+  <div class="card-container">
+    <div class="card" style="background-image: url('card1_background.jpg');">
+      <div class="side front">
+        <h2>Course 1</h2>
+        <p>Description of Course 1</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 1.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="background-image: url('card2_background.jpg');">
+      <div class="side front">
+        <h2>Course 2</h2>
+        <p>Description of Course 2</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 2.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="background-image: url('card3_background.jpg');">
+      <div class="side front">
+        <h2>Course 3</h2>
+        <p>Description of Course 3</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 3.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <div class="card" style="background-image: url('card1_background.jpg');">
+      <div class="side front">
+        <h2>Course 1</h2>
+        <p>Description of Course 1</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 1.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="background-image: url('card2_background.jpg');">
+      <div class="side front">
+        <h2>Course 2</h2>
+        <p>Description of Course 2</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 2.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="background-image: url('card3_background.jpg');">
+      <div class="side front">
+        <h2>Course 3</h2>
+        <p>Description of Course 3</p>
+      </div>
+      <div class="side back">
+        <h2>More Info</h2>
+        <p>Additional information about Course 3.</p>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => card.addEventListener('click', flipCard));
+    
+    function flipCard() {
+      this.classList.toggle('flipped');
+    }
+  </script>
+</body>
+</html>
