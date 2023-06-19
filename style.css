@@ -28,7 +28,125 @@ body {
   width: 60px;
   margin: 10px;
 }
+/*  */
+/*  */
+    /* Add custom styles to remove padding */
+    .services.section-bg,
+    .blogs.section-bg {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
 
+    /* #posterSection {
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+*/ .poster-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.poster-item {
+  flex: 0 0 200px;
+  margin: 0 10px;
+  transition: transform 0.5s;
+}
+
+.poster-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* .poster-item.current {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.poster-item.previous,
+.poster-item.next {
+  transform: scale(0.8);
+  z-index: 1;
+} */
+
+/* .poster-item.previous {
+  margin-right: 20px;
+} */
+
+/* .poster-item.next {
+  margin-left: 20px;
+}  */
+
+/* maybe */
+#posterSection {
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow-container {
+  width: 500px;
+  height: 300px;
+  position: relative;
+}
+
+.poster-item {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.poster-item img {
+  width: 600px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fade {
+  animation: fadeEffect 5s infinite;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*  */
+/*  */
+.poster-section {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.poster-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
+}
+/*  */
+/*  */
 .about-section {
   background-color: #f9f9f9;
   padding: 20px;
@@ -61,9 +179,9 @@ body {
   }
 }
 
-.card.flipped {
+/* .card.flipped {
   transform: rotateY(180deg);
-}
+} */
 
 .card .side {
   position: absolute;
@@ -80,14 +198,14 @@ body {
   text-align: center;
 }
 
-.card .back {
+/* .card .back {
   background-color: #f9f9f9;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  /* padding: 20px; */
+  padding: 20px;
   text-align: center;
   transform: rotateY(180deg);
-}
+} */
 
 .card h2 {
   color: #333;
@@ -228,10 +346,10 @@ body {
   bottom: -64px;
 }
 
-.section-bg .container,
+/* .section-bg .container,
 .lightbg {
   background-color: #1c1e25;
-}
+} */
 
 .section-title {
   padding-bottom: 30px;
