@@ -1,16 +1,15 @@
-const cards = document.querySelectorAll('.card');
+  $(document).ready(function() {
+  var slideIndex = 0;
+  showSlides();
 
-    cards.forEach(card => card.addEventListener('click', flipCard));
-    
-    function flipCard() {
-      if (!this.classList.contains('flipped')) {
-        // Close all other cards
-        cards.forEach(otherCard => {
-          if (otherCard !== this && otherCard.classList.contains('flipped')) {
-            otherCard.classList.remove('flipped');
-          }
-        });
-      }      
-      this.classList.toggle('flipped');
+  function showSlides() {
+    var slides = $(".poster-item");
+    slides.hide();
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
     }
-    
+    slides.eq(slideIndex - 1).fadeIn(1000);
+    setTimeout(showSlides, 5000); // Change slide every 3 seconds
+  }
+});
